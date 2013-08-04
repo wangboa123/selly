@@ -1,4 +1,4 @@
-package com.meehoo.selly;
+package com.meehoo.selly.controller;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -33,7 +33,13 @@ public class HomeController {
 		
 		model.addAttribute("serverTime", formattedDate );
 		
-		return "home";
+		return "index";
+	}
+	
+	@RequestMapping(value="/men",method=RequestMethod.GET)
+	public String Men(Model model){
+		logger.info("Welcome men");
+		return "men";
 	}
 	
 }
