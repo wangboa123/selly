@@ -3,16 +3,16 @@
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:schemaLocation="http://java.sun.com/xml/ns/persistence"> 
 	<persistence-unit name="sellyUnit" transaction-type="RESOURCE_LOCAL"> 
-
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<properties> 
-			<property name="hibernate.hbm2ddl.auto" value="validate" /> 
+			<property name="hibernate.hbm2ddl.auto" value="update" /> 
+			
+              <!--配置Hibernate方言 -->
+             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
 		</properties> 
 	</persistence-unit>
 	
 	<class>com.meehoo.selly.domain.Admin</class>
-	<class>com.meehoo.selly.domain.Clothes</class>
-	<class>com.meehoo.selly.domain.Discount</class>
-	<class>com.meehoo.selly.domain.Pair</class>
-	<class>com.meehoo.selly.domain.User</class>
+	
 	
 </persistence>
