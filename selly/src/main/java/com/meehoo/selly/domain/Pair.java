@@ -7,16 +7,24 @@ package com.meehoo.selly.domain;
 import java.util.*;
 
 /** @pdOid 61618f3d-0b53-4e1b-8b6a-4085c58dcce7 */
+@Entity
+@Table(name="tpair)
 public class Pair {
    /** @pdOid d2a0c68a-3683-48c1-9e0e-00ae611f1ee8 */
-   public java.lang.String id;
+	@Id
+	@GeneratedValue(generator="uuid")
+	@GenericGenerator(name="uuid",strategy="uuid")
+   public String id;
    /** @pdOid e414c32b-1097-44ed-9c26-c8f979f2f881 */
-   public java.lang.String pairName;
+	@Column(nallable=false)
+   public String pairName;
    /** @pdOid d7a7cd7d-a4c7-4070-8e32-c71fd8d98ac7 */
+	@Column(nallable=false)
    public float pairPrice;
    
    /** pair是组合，这个网站支持组合销售 */
    /** @pdRoleInfo migr=no name=Clothes assc=pairandclothes coll=java.util.Collection impl=java.util.HashSet mult=0..* */
+	@OneToMany
    public java.util.Collection<Clothes> clothes;
    
    
