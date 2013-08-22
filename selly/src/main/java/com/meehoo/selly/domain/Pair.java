@@ -6,9 +6,18 @@
 package com.meehoo.selly.domain;
 import java.util.*;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.GenericGenerator;
+
 /** @pdOid 61618f3d-0b53-4e1b-8b6a-4085c58dcce7 */
 @Entity
-@Table(name="tpair)
+@Table(name="tpair")
 public class Pair {
    /** @pdOid d2a0c68a-3683-48c1-9e0e-00ae611f1ee8 */
 	@Id
@@ -16,13 +25,13 @@ public class Pair {
 	@GenericGenerator(name="uuid",strategy="uuid")
    public String id;
    /** @pdOid e414c32b-1097-44ed-9c26-c8f979f2f881 */
-	@Column(nallable=false)
+	@Column(nullable=false)
    public String pairName;
    /** @pdOid d7a7cd7d-a4c7-4070-8e32-c71fd8d98ac7 */
-	@Column(nallable=false)
+	@Column(nullable=false)
    public float pairPrice;
    
-   /** pair是组合，这个网站支持组合销售 */
+   /** pair*/
    /** @pdRoleInfo migr=no name=Clothes assc=pairandclothes coll=java.util.Collection impl=java.util.HashSet mult=0..* */
 	@OneToMany
    public java.util.Collection<Clothes> clothes;

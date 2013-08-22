@@ -6,13 +6,22 @@
 package com.meehoo.selly.domain;
 import java.util.*;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.GenericGenerator;
+
 /** @pdOid 14cced87-b1bd-4195-ac05-fc4f96542627 */
 @Entity
 @Table(name="tuser")
 public class User {
    /** @pdOid 095cd6d6-ab4c-4822-a552-c012c9aca2e3 */
 	@Id
-	@GeneratedValue(genertor="uuid")
+	@GeneratedValue(generator="uuid")
 	@GenericGenerator(name="uuid",strategy="uuid")
    public String userID;
    /** @pdOid 85a63777-5a9a-409b-ae8d-566076f3777f */

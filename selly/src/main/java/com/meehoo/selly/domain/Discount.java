@@ -6,6 +6,15 @@
 package com.meehoo.selly.domain;
 import java.util.*;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.GenericGenerator;
+
 /** @pdOid e7b5f7ee-ecc0-4c8a-8a0c-09efb3dce48e */
 @Entity
 @Table(name="tdiscont")
@@ -16,7 +25,7 @@ public class Discount {
 	@GenericGenerator(name="uuid",strategy="uuid")
    public String id;
    /** @pdOid e45e662c-c9e5-4f0c-8d5b-1e1acfe4dac7 */
-	@Column(nullabel=false)
+	@Column(nullable=false)
    public String discountName;
    /** @pdOid f162ccbc-124b-4c36-9d8e-98780e017800 */
 	@Column(nullable=false)
