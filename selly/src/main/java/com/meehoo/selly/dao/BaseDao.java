@@ -73,7 +73,7 @@ public class BaseDao implements IBaseDao{
 	}
 
 	@Override
-	public <T> List<T> queryByJPQL(String queryString, Object... values) {
+	public <T> List<T> queryByJpql(String queryString, Object... values) {
 		// TODO Auto-generated method stub
 		Query queryObject = em.createQuery(queryString);
 		if(values !=null){
@@ -86,7 +86,7 @@ public class BaseDao implements IBaseDao{
 	}
 
 	@Override
-	public List queryBySQL(String sql, Object... values) {
+	public List queryBySql(String sql, Object... values) {
 		// TODO Auto-generated method stub
 		Query queryObject = em.createNativeQuery(sql);
 		if(values !=null){
@@ -98,7 +98,7 @@ public class BaseDao implements IBaseDao{
 	}
 
 	@Override
-	public Integer updateByJPQL(String jpql, Object... values) {
+	public Integer updateByJpql(String jpql, Object... values) {
 		// TODO Auto-generated method stub
 		Query queryObject = em.createQuery(jpql);
 		if(values !=null){
@@ -111,7 +111,7 @@ public class BaseDao implements IBaseDao{
 	}
 
 	@Override
-	public Integer updateBySQL(String sql, Object... values) {
+	public Integer updateBySql(String sql, Object... values) {
 		// TODO Auto-generated method stub
 		Query queryObject = em.createNativeQuery(sql);
 		if(values !=null){
