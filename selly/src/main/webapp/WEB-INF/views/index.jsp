@@ -189,6 +189,7 @@
         <script src="<%=request.getContextPath()%>/resources/assets/prettyPhoto/js/jquery.prettyPhoto.js"></script>
         <script src="<%=request.getContextPath()%>/resources/assets/js/scripts.js"></script>
         <script src="<%=request.getContextPath()%>/resources/assets/js/scaffold.js"></script>
+		<script src="<%=request.getContextPath()%>/resources/asserts/js/selly/index.js></script>
 	</div>
     </body>
 
