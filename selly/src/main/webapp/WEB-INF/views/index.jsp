@@ -46,22 +46,6 @@
                     <div class="span10 offset1">
                         <div class="flexslider">
                             <ul class="slides">
-                                <li data-thumb="assets/img/slider/1.jpg">
-                                    <img src="assets/img/slider/1.jpg">
-                                <!--    <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur.</p>-->
-                                </li>
-                                <li data-thumb="assets/img/slider/2.jpg">
-                                    <img src="assets/img/slider/2.jpg">
-                              <!--      <p class="flex-caption">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>-->
-                                </li>
-                                <li data-thumb="assets/img/slider/3.jpg">
-                                    <img src="assets/img/slider/3.jpg">
-                             <!--       <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur.</p>-->
-                                </li>
-                                <li data-thumb="assets/img/slider/4.jpg">
-                                    <img src="assets/img/slider/4.jpg">
-                                 <!--   <p class="flex-caption">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>-->
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -75,106 +59,8 @@
             <div class="portfolio-title">
                 <h3>精品推荐</h3>
             </div>
-            <div class="row">
-                <div class="work span3">
-                    <img src="assets/img/portfolio/jp1.jpg" alt="">
-                    <h4>针织背心</h4>
-                    <p>夏装新品，休闲时尚系列</p>
-                </div>
-                <div class="work span3">
-                    <img src="assets/img/portfolio/jp2.jpg" alt="">
-                    <h4>拼接背心</h4>
-                    <p>夏装新品，休闲时尚系列</p>
-		</div>
-                <div class="work span3">
-                    <img src="assets/img/portfolio/jp3.jpg" alt="">
-                    <h4>针织短袖</h4>
-                    <p>男士三角图案印花元领针织短袖T恤</p>
-                </div>
-                <div class="work span3">
-                    <img src="assets/img/portfolio/jp4.jpg" alt="">
-                    <h4>v领短袖</h4>
-                    <p>男人印花V领短袖T恤</p>
-                </div>
-            </div>
         </div>
 
-
-        <!-- portfolio 2-->
-        <div class="portfolio container">
-            <div class="row">
-                <div class="work span3">
-                    <img src="assets/img/portfolio/jp5.jpg" alt="">
-                    <h4>Lorem Website</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
-                </div>
-                <div class="work span3">
-                    <img src="assets/img/portfolio/jp6.jpg" alt="">
-                    <h4>Ipsum Logo</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
-                </div>
-                <div class="work span3">
-                    <img src="assets/img/portfolio/jp7.jpg" alt="">
-                    <h4>Dolor Prints</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
-                </div>
-                <div class="work span3">
-                    <img src="assets/img/portfolio/jp8.jpg" alt="">
-                    <h4>Sit Amet Website</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
-                </div>
-            </div>
-        </div>
-        <!-- portfolio 3-->
-        <div class="portfolio container">
-            <div class="row">
-                <div class="work span3">
-                    <img src="assets/img/portfolio/jp9.jpg" alt="">
-                    <h4>Lorem Website</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
-                </div>
-                <div class="work span3">
-                    <img src="assets/img/portfolio/jp10.jpg" alt="">
-                    <h4>Ipsum Logo</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
-                </div>
-                <div class="work span3">
-                    <img src="assets/img/portfolio/jp11.jpg" alt="">
-                    <h4>Dolor Prints</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
-                </div>
-                <div class="work span3">
-                    <img src="assets/img/portfolio/jp12.jpg" alt="">
-                    <h4>Sit Amet Website</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
-                </div>
-            </div>
-        </div>
-        <!-- portfolio 4-->
-        <div class="portfolio container">
-            <div class="row">
-                <div class="work span3">
-                    <img src="assets/img/portfolio/jp13.jpg" alt="">
-                    <h4>Lorem Website</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
-                </div>
-                <div class="work span3">
-                    <img src="assets/img/portfolio/jp14.jpg" alt="">
-                    <h4>Ipsum Logo</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
-                </div>
-                <div class="work span3">
-                    <img src="assets/img/portfolio/jp15.jpg" alt="">
-                    <h4>Dolor Prints</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
-                </div>
-                <div class="work span3">
-                    <img src="assets/img/portfolio/jp16.jpg" alt="">
-                    <h4>Sit Amet Website</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
-                </div>
-            </div>
-        </div>
 
         <!-- Javascript -->
 	<div class="hide" id="afterFooter"></div>

@@ -42,4 +42,21 @@ public class HomeController {
 		return "men";
 	}
 	
+	@RequestMappng(value="/scrollfour.html",method=ReuestMethod.GET)
+	public String ScrollFour(Model model){
+
+		//testcode here. and later will test in javascript
+		List<String> picList = new ArrayList<String>();
+		picList.add("../../resources/assets/img/slider/1.jpg");
+		picList.add("../../resources/assets/img/slider/2.jpg");
+		picList.add("../../resources/assets/img/slider/3.jpg");
+		picList.add("../../resources/assets/img/slider/4.jpg");
+
+		HashMap<String,String> retData = new HashMap<String,String>();
+		retData.push("name","scroll");
+		retData.push("num","4");
+		retData.push("values",picList);
+		model.addAttribute("scrollfour",retData);
+	}
+
 }
