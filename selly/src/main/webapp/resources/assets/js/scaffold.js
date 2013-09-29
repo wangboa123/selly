@@ -1,11 +1,18 @@
 !function ($){
 	addHeader();
 	addFooter();
-	
+
+	var homepage = true;
 	$('div.menu ul li a').each(function(){
-		if($($(this))[0].href ==String(window.location))
+		if($($(this))[0].href ==String(window.location)){
 			$(this).parent().addClass('current-page');
+			homepage = false; 
+		}
 	});
+
+	if(homepage){
+		$('div.menu ul li:first-child').addClass('current-page');
+	}
 	$('a.ajax-link').click(function(e)
 	{
 		$click = $(this);
@@ -33,22 +40,22 @@ function addHeader(){
         headStr+=       '                    <div class="nav-collapse collapse menu">';
         headStr+=       '                        <ul class="nav pull-right">';
         headStr+=       '                            <li class="">';
-        headStr+=       '                                <a class="ajax-link" href="/menu/index.html"><i class="icon-home"></i><br />主页</a>';
+        headStr+=       '                                <a class="ajax-link" href="/menu/index"><i class="icon-home"></i><br />主页</a>';
         headStr+=       '                            </li>';
         headStr+=       '                            <li>';
-        headStr+=       '                                <a  class="ajax-link"  href="/menu/men.html"><i class="icon-camera"></i><br />男装</a>';
+        headStr+=       '                                <a  class="ajax-link"  href="/menu/men"><i class="icon-camera"></i><br />男装</a>';
         headStr+=       '                            </li>';
         headStr+=       '                            <li>';
-        headStr+=       '                                <a h class="ajax-link" ref="#"><i class="icon-comments"></i><br />女装</a>';
+        headStr+=       '                                <a h class="ajax-link" ref="/menu/women"><i class="icon-comments"></i><br />女装</a>';
         headStr+=       '                            </li>';
         headStr+=       '                            <li>';
-        headStr+=       '                                <a  class="ajax-link" href="services.html"><i class="icon-tasks"></i><br />推荐搭配</a>';
+        headStr+=       '                                <a  class="ajax-link" href="/menu/services"><i class="icon-tasks"></i><br />推荐搭配</a>';
         headStr+=       '                            </li>';
         headStr+=       '                            <li>';
-        headStr+=       '                                <a  class="ajax-link" href="/menu/about.html"><i class="icon-user"></i><br />限时优惠</a>';
+        headStr+=       '                                <a  class="ajax-link" href="/menu/about"><i class="icon-user"></i><br />限时优惠</a>';
         headStr+=       '                            </li>';
         headStr+=       '                            <li>';
-        headStr+=       '                                <a  class="ajax-link" href="contact.html"><i class="icon-envelope-alt"></i><br />联系我们</a>';
+        headStr+=       '                                <a  class="ajax-link" href="contact"><i class="icon-envelope-alt"></i><br />联系我们</a>';
         headStr+=       '                            </li>';
         headStr+=       '                        </ul>';
         headStr+=       '                    </div>';

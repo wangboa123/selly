@@ -8,7 +8,7 @@ import javax.persistence.Query;
 
 import org.springframework.stereotype.Repository;
 
-@Repository("basedao")
+@Repository
 public class BaseDao implements IBaseDao{
 
 

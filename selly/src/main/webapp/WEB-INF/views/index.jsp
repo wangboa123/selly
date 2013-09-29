@@ -68,14 +68,15 @@
         <script src="<%=request.getContextPath()%>/resources/assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="<%=request.getContextPath()%>/resources/assets/js/jquery.flexslider.js"></script>
         <script src="<%=request.getContextPath()%>/resources/assets/js/jquery.tweet.js"></script>
-        <script src="<%=request.getContextPath()%>/resource/assets/js/jflickrfeed.js"></script>
+        <script src="<%=request.getContextPath()%>/resources/assets/js/jflickrfeed.js"></script>
 <!--        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>-->
         <script src="<%=request.getContextPath()%>/resources/assets/js/jquery.ui.map.min.js"></script>
         <script src="<%=request.getContextPath()%>/resources/assets/js/jquery.quicksand.js"></script>
         <script src="<%=request.getContextPath()%>/resources/assets/prettyPhoto/js/jquery.prettyPhoto.js"></script>
         <script src="<%=request.getContextPath()%>/resources/assets/js/scripts.js"></script>
         <script src="<%=request.getContextPath()%>/resources/assets/js/scaffold.js"></script>
-		<script src="<%=request.getContextPath()%>/resources/asserts/js/selly/index.js></script>
+        <script src="<%=request.getContextPath()%>/resources/assets/js/selly/show16pic.js"></script>
+		<script src="<%=request.getContextPath()%>/resources/assets/js/selly/index.js"></script>
 	</div>
     </body>
 

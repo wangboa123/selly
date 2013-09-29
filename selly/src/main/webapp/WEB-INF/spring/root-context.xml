@@ -43,6 +43,23 @@
 	   <bean id="jpaVendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
   			<property name="showSql" value="true"/>
 		</bean>
+		
+
+	<!-- json 支持 -->
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">      
+        <property name="messageConverters">      
+            <list >      
+                <ref bean="mappingJacksonHttpMessageConverter" />      
+            </list>      
+        </property>      
+    </bean> 
+    <bean id="mappingJacksonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">    
+    <property name="supportedMediaTypes">    
+        <list>    
+            <value>application/json;charset=UTF-8</value>    
+       </list>    
+    </property>  
+</bean> 
 </beans>
 	             
 	             

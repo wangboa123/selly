@@ -1,6 +1,6 @@
 function show16pic(type){
 	$.ajax({
-		url:'get16pic.html',
+		url:'/selly/get16pic',
 		data:{'type':type},
 		success:function(ret){
 			//ret中保存的是16张图片地址的json
